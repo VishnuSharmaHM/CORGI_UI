@@ -1,0 +1,115 @@
+#submit
+{
+  background-color: darkblue;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#button{
+align: center;
+}
+
+#map
+{
+height:300px;
+}
+
+#floating-panel
+{
+  position: absolute;
+  top: 160px;
+  left: 30%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.pie
+{
+  --w:110px;
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  place-content: center;
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.pie:before
+{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  background: conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
+
+a[href^="http://maps.google.com/maps"],
+a[href^="https://maps.google.com/maps"],
+a[href^="https://www.google.com/maps"]
+{
+display: none !important;
+}
+
+.gm-bundled-control .gmnoprint
+{
+    display: block;
+}
+
+.gmnoprint:not(.gm-bundled-control)
+{
+    display: none;
+}
+
+.bigbox
+{
+    width:25%;
+    float:left;
+}
+
+.box
+{
+  background: white;
+  width: 350px;
+  padding: 3px;
+  margin: 3px auto;
+  border-color: red;
+}
+
+.bigbox1
+{
+    width:15%;
+    float:left;
+}
+
+.box1
+{
+  background: white;
+  width: 350px;
+  padding: 7px;
+  margin: 3px auto;
+  color:black;
+}
+
+body
+{
+  background-image: url('img.png');
+  background-repeat: repeat;
+  font-family: "Times New Roman";
+}
